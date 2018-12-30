@@ -1,5 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import SnowStorm from 'react-snowstorm';
 import { Provider } from 'react-redux';
 import store from '../../store';
 import GameLayout from '../GameLayout';
@@ -27,6 +28,7 @@ const App = () => (
     <Provider store={store}>
         <GlobalStyle />
         <GameLayout />
+        <SnowStorm followMouse={false} />
     </Provider>
 );
 
